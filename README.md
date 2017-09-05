@@ -1,6 +1,4 @@
 # FooMon
-
-### Architechure
 ![ALL THE FUSS!](https://i.imgur.com/NVHRFu4.png)
 
 ---
@@ -18,6 +16,8 @@ There are three primary components of the service :
 - The hosts that run your application , EC2 containers , vms on bare metals , vms on aws boxes ... basically anything with a linux kernel ( raspberry pi too )
 - The aggregator db : this is a graphite db. (Kick ass. Chew bubblegum. Make it easy to store and graph metrics.)
 - Grafana : Visualizations reloaded.
+
+![Architecture](https://i.imgur.com/ZeQGC3U.png)
 
 ### Local setup :
 
