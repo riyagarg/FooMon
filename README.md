@@ -1,7 +1,7 @@
 # FooMon
 
 ### Architechure
-![Image of Yaktocat](https://i.imgur.com/ZeQGC3U.png)
+![ALL THE FUSS!](https://i.imgur.com/NVHRFu4.png)
 
 ---
 ## Real time system + application + metrics + events monitoring
