@@ -1,0 +1,5 @@
+.idea/
+grafana_host/.vagrant/
+grafana_host/ubuntu*
+graphite_host/.vagrant/
+graphite_host/ubuntu*
