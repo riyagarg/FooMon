@@ -63,16 +63,19 @@ There are three primary components of the service :
       </Node>
   </Plugin>
   ```
+  
   - Once you are here you can have to set the `Host "localhost"` to `Host "192.168.60.61"`
   - This is the ip of the graphite database that you have setup.
   - We will tell Graphite to store collectd information at intervals of ten seconds for one day, at one minute for seven days, and intervals of ten minutes for one year.
   - This will give us a good balance between detailed information for recent activity and general trends over the long term. Collectd passes its metrics starting with the string collectd, so we will match that pattern.
   - The policy we described can be added by adding these lines. Remember, add these above the default policy, or else they will never be applied:
+  
   ```
       [collectd]
       pattern = ^collectd.*
       retentions = 10s:1d,1m:7d,10m:1y
   ```
+  
   - Get back to grafana and create a dashboard.
 
 ---
