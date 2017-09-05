@@ -1,11 +1,9 @@
 # FooMon
-![ALL THE FUSS!](https://i.imgur.com/NVHRFu4.png)
-
-![Sample](https://i.imgur.com/uHRPmBi.png)
-
+### Real time system + application + metrics + events monitoring
 ---
-## Real time system + application + metrics + events monitoring
-
+![ALL THE FUSS!](https://i.imgur.com/NVHRFu4.png)
+![Sample](https://i.imgur.com/uHRPmBi.png)
+---
 A service to monitor system metrics at near real time.
 
 ### What metrics are we talking about ?
