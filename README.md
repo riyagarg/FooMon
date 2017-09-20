@@ -2,10 +2,8 @@
 ### Real time system + application + metrics + events monitoring
 ---
 ![ALL THE FUSS!](https://i.imgur.com/NVHRFu4.png)
-![Sample](https://i.imgur.com/uHRPmBi.png)
----
-A service to monitor system metrics at near real time.
 
+---
 ### What is foomon ?
 Foomon is a platform for data aggregation and visualisation.
 
@@ -17,14 +15,14 @@ Foomon has three essential components to it
 3.  Visualiser.
 
 
-1.  Producers : 
+1.  **Producers** : 
     Anything that produces data for a given key. They can be one of the below three
 
     1.1 Applications : Microservices or services, Java , Ruby or node based applicaitions, 
     1.2 Servers :  Bare metals, vms or AWS hosts, this data ranges from cpu usage , entropy disk space, mysql read writes , kafka latencies and a huge number of other metrics.
     1.3 Custom cron jobs / On demand data : You can also pipe in data from custom shell scripts into the system to visualise it at a later point in time.
 
-2.  Consumer : 
+2.  **Consumer** : 
 
     A consumer is typically a graphite database that aggregates data from any or all of the given Producers and exposes a queriable interface.
     This is a nosql time series database. Any data has three essesntial components.
@@ -34,8 +32,7 @@ Foomon has three essential components to it
     - Value : The value here refers to the value against the key.
 
     Hence to represent the data for a given metric, it would look like somewhat below
-
-    ```
+```
     | qa9.acx.cpu_usage | 1505922970 | 98.34 |
     | qa9.acx.cpu_usage | 1505922976 | 44.34 |
     | qa9.acx.cpu_usage | 1505922982 | 94.34 |
@@ -49,19 +46,29 @@ Foomon has three essential components to it
     | 1505922976 | 44.34 |
     | 1505922982 | 94.34 |
     | 1505922988 | 97.34 |
-    ```
-    
+```
     The choice of the database used here is Graphite. There are other alternatives as well like influxdb , elasticsearch and the most popular OpenTSDB.
     OpenTSDB would is teh ideal candidate for an enterprise level architecture for its scalable and distributed nature, however it comes at the cost of an elaborate setup.
 
     Read more about the GraphiteDB here.
 
-3.  Visualizer : 
+3.  **Visualizer** : 
     This is essentially a queriable interface to the abovementioned database.
     This is powered by Grafana.
 
-    In Grafana all you need to do is to configure the data source once.
+    In Grafana all you need to do is to configure the data source once. Once you have setup the database, you are good to create dashboards on your own
+    You can create custom dashboards, save as well as share dashboards.
+    The dashboards can be saved as JSON objects that can be passed around as well.
+    As of  right now, there are 32 data sources, 27 panels, 16 apps and 472 dashboards available to configure in grafana.
+    Its supports real time query of data at intervals and has a wide variety of data source to read data from.
 
+    https://github.com/grafana/grafana
+    Grafana is distributed under Apache 2.0 License.
+
+![Sample](https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67)  
+  
+  --- 
+  
 ![Architecture](https://i.imgur.com/ZeQGC3U.png)
 
 ### Local setup :
