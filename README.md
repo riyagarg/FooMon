@@ -35,22 +35,22 @@ Foomon has three essential components to it
 
     Hence to represent the data for a given metric, it would look like somewhat below
 
-```
+    ```
     | qa9.acx.cpu_usage | 1505922970 | 98.34 |
     | qa9.acx.cpu_usage | 1505922976 | 44.34 |
     | qa9.acx.cpu_usage | 1505922982 | 94.34 |
     | qa9.acx.cpu_usage | 1505922988 | 97.34 |
-```
+
     This can be visualized as below for the key qa9.acx.cpu_usage as : 
-```
+
     | TIMESTAMP  | VALUE |
     ----------------------
     | 1505922970 | 98.34 |
     | 1505922976 | 44.34 |
     | 1505922982 | 94.34 |
     | 1505922988 | 97.34 |
-```
-
+    ```
+    
     The choice of the database used here is Graphite. There are other alternatives as well like influxdb , elasticsearch and the most popular OpenTSDB.
     OpenTSDB would is teh ideal candidate for an enterprise level architecture for its scalable and distributed nature, however it comes at the cost of an elaborate setup.
 
