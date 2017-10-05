@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Foomon</title>
+    <link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">
+  </head>
+  <body class="container-fluid">
+    <div class="jumbotron">
+      <h1>Foomon!</h1>
+      <h4>A platform for data aggregation</h4>
+      <h4>Real time system + application + metrics + events monitoring</h4>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="text-info">Metrics @ real time</>
+            </div>
+            <div class="panel-body">
+                <p>Foomon provides an out of the box support for industry grade metrics monitoring system that works with servers, applications or even custom data that you can push for a short while. </p>
+
+                <h4>What does it cover ?</h4>
+                <li>Applications : Microservices or services, Java , Ruby or node based applicaitions</ul>
+                <li>Servers : Bare metals, vms or AWS hosts, this data ranges from cpu usage , entropy disk space, mysql read writes , kafka latencies and a huge number of other metrics</li>
+                <li>Custom cron jobs / On demand data : You can also pipe in data from custom shell scripts into the system to visualise it at a later point in time.</li>
+
+                <h4 class="text-danger">Alerting on slack and telegram </h4>
+
+                <img src="http://blogs.newschool.edu/digitalhumanities/files/2016/02/Slack_Icon.png" alt="" width="20%">&nbsp;
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/480px-Telegram_Messenger.png" alt="" width="20%">
+                <br><br>
+                <p>Sample dashboard</p>
+                <img src="https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67" alt="sample" width="90%">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="text-info">Replaces Logentries</h3>
+            </div>
+            <div class="panel-body">
+                <p>Apart from numeric metrices, foomon also hosts an elasticsearch instance and a kibana dashboard where logs from various applications are steamlined and and is indexed for querying. The logs are available as soon as you produce them , making it super easy to query them in case of issues or when you want to make reports out of them in terms of charts</p>
+
+                <h4>The whole thing is supported by filebeat, which also makes sure you are not overloading the elasticsearch intance</h4>
+                <br><br>
+                <img src="https://i.imgur.com/LP5tigz.png" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="text-info">And heap analytics</h3>
+            </div>
+            <div class="panel-body">
+                <p>UI developers and product owners alike, loves to know what part of the product are users using the most. And hence we pay heap analytics annually to store this data.</p>
+                <h4>What if we could do that inhouse and not send our data over to a third party?</h4>
+                <h2>Well we did just that !</h2>
+                <p>We capture events, and stream them to the elasticsearch</p>
+                <p>And those events are now at our disposal to be queried and made charts out of them </p>
+
+                <br>
+                <br>
+                <img src="https://www.elastic.co/assets/bltd813198e87d94819/Screen-Shot-2014-12-15-at-12.28.30-PM.png" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
